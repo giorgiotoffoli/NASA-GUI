@@ -1,10 +1,10 @@
-import { useState } from 'react';
 import { Card } from './components/ui/card';
+import evData from './data.json';
 import './index.css';
 
 let oxygen: number;
 
-oxygen = 20;
+oxygen = evData['eva1:telemetry'].data.oxy_pri_storage;
 
 function App() {
   return (
